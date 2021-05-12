@@ -340,7 +340,8 @@
               margin-right: 10px
       .popup-tags,
       .popup-notes,
-      .popup-messages
+      .popup-messages,
+      .popup-data
         opacity: 0
         visibility: hidden
         z-index: -1
@@ -357,6 +358,10 @@
       .popup-notes
         top: calc(20vh + 180px)
       .popup-messages
+        left: initial
+        right: 30px
+        top: 85px
+      .popup-data
         left: initial
         right: 30px
         top: 85px
@@ -377,7 +382,8 @@
           color: white
         .tags,
         .notes,
-        .messages
+        .messages,
+        .data
           background: #262B3F
           padding: 15px
           overflow: scroll
@@ -496,6 +502,34 @@
                 font-size: 10px
                 line-height: 140%
                 color: #A4ABC5
+        .data
+          border-radius: 0 0 8px 8px
+          form
+            width: 100%
+            input
+              width: 100%
+              height: 30px
+              border: 1px solid #a4abc4
+              background-color: transparent
+              margin-bottom: 10px
+              padding: 0 5px
+              font-style: normal
+              font-weight: 400
+              font-size: 12px
+              line-height: 140%
+              outline: none
+              appearance: none
+              color: #fff
+              &::placeholder
+                font-style: normal
+                font-weight: 400
+                font-size: 12px
+                line-height: 140%
+                color: #a4abc4
+            input[type="submit"]
+              background-color: #009fad
+              border: 0
+              border-radius: 20px
       .tags-input,
       .notes-input,
       .messages-input

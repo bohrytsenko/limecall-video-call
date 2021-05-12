@@ -9,6 +9,8 @@ $( document ).ready(function() {
         $(this).addClass('active');
         $('.popup-messages').removeClass('active');
         $('.open-messages').removeClass('active');
+        $('.popup-data').removeClass('active');
+        $('.open-data').removeClass('active');
     });
 
     $('.close-call-transfer').on('click', function () {
@@ -63,11 +65,27 @@ $( document ).ready(function() {
         $(this).addClass('active');
         $('.popup-call-transfer').removeClass('active');
         $('.open-call-transfer').removeClass('active');
+        $('.popup-data').removeClass('active');
+        $('.open-data').removeClass('active');
     });
 
     $('.close-messages').on('click', function () {
         $('.popup-messages').removeClass('active');
         $('.open-messages').removeClass('active');
+    });
+
+    // Open/Close data
+
+    $('.open-data').on('click', function () {
+        $('.popup-data').addClass('active');
+        $(this).addClass('active');
+        $('.popup-call-transfer').removeClass('active');
+        $('.open-call-transfer').removeClass('active');
+    });
+
+    $('.close-data').on('click', function () {
+        $('.popup-data').removeClass('active');
+        $('.open-data').removeClass('active');
     });
 
     // Search members
